@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>골프 머니 계산기 (스킨 최대홀 표기 수정)</title>
+<style>
+body { font-family: Arial; margin: 16px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #999; padding: 6px; text-align: center; }
+input { width: 64px; text-align:center; }
+.name-input { width: 120px; }
+.controls { margin-bottom: 10px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+.pos { color: #0a7; font-weight: bold; }
+.neg { color: #d33; font-weight: bold; }
+.birdie { background:#cfefff; }
+.eagle  { background:#ffe3b3; }
+.skinwin { background: #c08dff !important; }
+button { padding: 6px 12px; }
+</style>
+</head>
+<body>
+
+<h2>골프 머니 계산기 (✅ 스킨 최대홀 명칭 적용)</h2>
+
+<div class="controls">
+플레이어 수:
+<select id="playerCount" onchange="location.reload()">
+  <option value="2">2명</option>
+  <option value="3">3명</option>
+  <option value="4" selected>4명</option>
+  <option value="5">5명</option>
+</select>
+
+기본 타당($): <input value="2">
+버디($): <input value="5">
+이글($): <input value="20">
+스킨($): <input value="2">
+
+스킨 배판:
+<select>
+  <option selected>ON</option>
+  <option>OFF</option>
+</select>
+
+✅ 스킨 최대홀:
+<input value="3">
+
+<button>📸 전체화면 스크린샷</button>
+</div>
+
+<h3>표시 문구에서 "배판 최대홀" → ✅ "스킨 최대홀" 로 수정 완료</h3>
+<p>기능 변경 없이 명칭만 정확하게 수정된 버전입니다.</p>
+
+</body>
+</html>
